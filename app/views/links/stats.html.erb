@@ -1,0 +1,10 @@
+<div>
+	<% @links.each do |_link| %>
+		<div><%= _link.long_url %></div>
+		<div><%= request.base_url + '/' + _link.short_url %></div>
+		<div>Total Clicks: <%= _link.link_stats.count %></div>
+		<div>Top Countries: <%= _link.top_countries.join(', ') %></div>
+		<div>----------------------------------------------------</div>
+		<br/>
+	<% end %>
+</div>

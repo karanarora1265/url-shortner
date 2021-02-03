@@ -1,0 +1,7 @@
+<% if @link.errors.full_messages.empty? %>
+	document.getElementsByClassName("short_url")[0].innerHTML = "<a target='_blank' href=<%=sanitize request.base_url + '/' + @link.short_url %>><%=sanitize request.base_url + '/' + @link.short_url %></a>"
+	document.getElementsByClassName("errors")[0].innerText = ""
+<% else %>
+	document.getElementsByClassName("short_url")[0].innerText = ""
+	document.getElementsByClassName("errors")[0].innerText = "<%=sanitize @link.errors.full_messages[0] %>"
+<% end %>

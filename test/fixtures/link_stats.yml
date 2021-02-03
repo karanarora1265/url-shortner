@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event: MyText
+  ip_address: MyText
+  country: MyText
+
+two:
+  event: MyText
+  ip_address: MyText
+  country: MyText

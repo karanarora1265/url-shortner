@@ -1,0 +1,13 @@
+<div class="errors">
+	
+</div>
+<%= form_for @link, remote: true do |f| %>
+  <%= f.label :long_url %>:
+  <%= f.text_field :long_url %><br />
+
+  <%= f.submit %>
+<% end %>
+
+<div class="short_url">
+	
+</div>
